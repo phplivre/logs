@@ -1,3 +1,4 @@
+<?php
 function logs($x1) {
 
 // endereço url
@@ -12,3 +13,4 @@ $mysqli = new mysqli ("localhost","root","12345678","db");
 // query para inserir
 $mysqli -> query ("insert into prefixo_logs (log,data,email,ip,pagina) values ('".$x1."','".date('Y-m-d H:i:s')."','".$eml."','".$_SERVER[REMOTE_ADDR]."','".$end."')");
 }
+?>
